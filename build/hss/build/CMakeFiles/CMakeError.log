@@ -1,0 +1,23 @@
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/spencer/Desktop/openair-cn/build/hss/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b6e6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b6e6a.dir/build.make CMakeFiles/cmTC_b6e6a.dir/build
+make[1]: Entering directory '/home/spencer/Desktop/openair-cn/build/hss/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6e6a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b6e6a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.7/Modules/CheckFunctionExists.c:7:3: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_b6e6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6e6a.dir/link.txt --verbose=1
+/usr/bin/cc   -msse4.2 -std=gnu99 -Wall -Wstrict-prototypes -fno-strict-aliasing -rdynamic -funroll-loops -Wno-packed-bitfield-compat -DCMAKER -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b6e6a.dir/CheckFunctionExists.c.o  -o cmTC_b6e6a -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b6e6a.dir/build.make:97: recipe for target 'cmTC_b6e6a' failed
+make[1]: *** [cmTC_b6e6a] Error 1
+make[1]: Leaving directory '/home/spencer/Desktop/openair-cn/build/hss/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b6e6a/fast' failed
+make: *** [cmTC_b6e6a/fast] Error 2
+
+
